@@ -18,7 +18,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install -r backup/requirements.txt
+          pip install -r requirements.txt
 
       - name: Run Backup
         run: |
