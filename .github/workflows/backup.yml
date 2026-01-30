@@ -1,0 +1,35 @@
+name: Historical Backup
+
+on:
+  workflow_dispatch:   # Manual Run
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Dependencies
+        run: |
+          pip install -r backup/requirements.txt
+
+      - name: Run Backup
+        run: |
+          python backup.py
+
+      - name: Commit Files
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+          git add .
+          git commit -m "Historical backup 2023-2025" || echo "No changes"
+
+          git push
