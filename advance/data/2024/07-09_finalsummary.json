@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+		<!-- Primary Meta Tags -->
+		<title>BFilmy – All India Live Box Office &amp; Advance Tracking</title>
+		<meta name="google-adsense-account" content="ca-pub-9348936590334154">
+		<meta name="title" content="Track Advance Box Office | BFilmy">
+		<meta name="description" content="Live Advance Tracking | Updated daily with real-time gross, show count and details">
+		<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9348936590334154" crossorigin="anonymous"></script> <!-- Favicons -->
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="/logo192.png">
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="Advance/">
+		<meta property="og:title" content="Track Advance Box Office | BFilmy">
+		<meta property="og:description" content="Live Advance Tracking | Updated daily with real-time gross, show count and details">
+		<meta property="og:image" content="https://bfilmy.pages.dev/banner.jpg">
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Track Live Advance Box Office | BFilmy">
+		<meta name="twitter:description" content="Live Advance Tracking | Updated daily with real-time gross, show count and details">
+		<meta name="twitter:image" content="https://bfilmy.pages.dev/banner.jpg">
+		<!-- Additional SEO -->
+		<meta name="keywords" content=" Advance Booking, Live Box Office, Bfilmy Pages, Box Office, live tracking, BFilmy, premiere show data, gross collections, movie advance report">
+		<meta name="author" content="BFilmy Team">
+		<meta name="robots" content="index, follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<!-- Adsense -->
+		<meta name="google-adsense-account" content="ca-pub-9348936590334154">
+		<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9348936590334154" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/navbar.css">
+		<script src="/navbar.js"></script>
+		<style>
+/* ================= BASE ================= */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial;
+  background: linear-gradient(180deg, #f8fafc, #eef2f7);
+  color: #111827;
+  text-rendering: optimizeLegibility;
+}
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 16px;
+}
+
+/* ================= CONTROLS ================= */
+.controls {
+  display: grid;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+.controls input,
+.controls select {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  font-weight: 600;
+}
+@media (min-width: 600px) {
+  .controls {
+    display: flex;
+  }
+}
+
+/* ================= GRID ================= */
+/* MOBILE-FIRST GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 140px;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 14px;
+  }
+}
+
+/* CARD */
+.card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+@media (hover: hover) {
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+  }
+}
+@media (min-width: 600px) {
+  .card img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    display: block;
+  }
+}
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 32px;
+}
+.track-btn {
+  margin-top: 8px;
+  padding: 8px 0;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #fff;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+  text-align: center;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 10px rgba(220, 38, 38, 0.35);
+}
+
+.track-btn:active {
+  transform: scale(0.97);
+}
+
+/* ================= AD SLOT (NO CLS) ================= */
+.ad-slot {
+  width: 100%;
+  height: 250px;
+  margin: 24px 0;
+  background: #e5e7eb;
+  border-radius: 12px;
+}
+@media (max-width: 600px) {
+  .ad-slot {
+    height: 280px;
+  }
+}
+
+/* ================= MODAL ================= */
+#modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+#modal.show {
+  display: flex;
+}
+.modal-box {
+  background: #fff;
+  width: 100%;
+  max-width: 460px;
+
+  /* 🔑 THIS IS THE FIX */
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  border-radius: 20px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+.modal-header {
+  padding: 16px;
+  font-weight: 800;
+  border-bottom: 1px solid #e5e7eb;
+}
+.modal-body {
+  padding: 16px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  /* header (~72px) + footer (~60px) */
+  max-height: calc(90vh - 132px);
+}
+.modal-footer {
+  padding: 12px;
+  text-align: right;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #0b0f19;
+  color: #9ca3af;
+  padding: 40px 16px;
+}
+footer a {
+  color: #e5e7eb;
+  text-decoration: none;
+  margin-right: 16px;
+}
+footer a:hover {
+  color: #fff;
+}
+
+/* ================= SCROLL BTN ================= */
+#scrollBtn {
+  position: fixed;
+  right: 14px;
+  bottom: 92px;
+
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #dc2626, #991b1b);
+  color: #fff;
+  border: none;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  font-weight: 900;
+
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.35),
+    inset 0 1px 0 rgba(255_toggle=white,.15);
+
+  cursor: pointer;
+  z-index: 1300;
+
+  transition:
+    opacity .25s ease,
+    transform .25s ease,
+    box-shadow .25s ease,
+    background .25s ease;
+
+  backdrop-filter: blur(10px);
+  -webkit-tap-highlight-color: transparent;
+}
+#scrollBtn:active {
+  transform: scale(.92);
+  box-shadow:
+    0 6px 14px rgba(0,0,0,.35);
+}
+#scrollBtn {
+  animation: floatIn .35s ease;
+}
+
+@keyframes floatIn {
+  from {
+    transform: translateY(12px) scale(.9);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+#scrollBtn.brand {
+  background: linear-gradient(135deg, #dc2626, #991b1b);
+}
+#scrollBtn {
+  background: rgba(17, 24, 39, 0.65);
+  backdrop-filter: blur(1px);
+  box-shadow:
+    0 8px 22px rgba(0,0,0,.35),
+    inset 0 1px 0 rgba(255,255,255,.2);
+}
+
+/* ================= PRO MODAL UPGRADE ================= */
+.modal-box {
+  animation: modalPop 0.25s ease;
+}
+
+@keyframes modalPop {
+  from {
+    transform: translateY(20px) scale(0.96);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.modal-title {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.modal-close {
+  border: none;
+  background: #f3f4f6;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.modal-meta {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* Pills */
+.pill {
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.pill:hover {
+  background: #111827;
+  color: #fff;
+  border-color: #111827;
+}
+
+.pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.section-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 16px 0 8px;
+  color: #374151;
+}
+
+/* Bottom-sheet feel on mobile */
+@media (max-width: 600px) {
+  .modal-box {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: none;
+    border-radius: 20px 20px 0 0;
+  }
+}
+.modal-close {
+  background: linear-gradient(135deg, #111827, #1f2937);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+.modal-close:hover {
+  transform: rotate(90deg) scale(1.05);
+}
+.pro-footer {
+  background: #0b0f19;
+  color: #cbd5e1;
+  padding: 50px 20px 20px;
+}
+.footer-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+}
+.footer-grid h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.footer-grid h4 {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+.footer-grid a {
+  display: block;
+  color: #cbd5e1;
+  text-decoration: none;
+  margin: 6px 0;
+  font-size: 0.85rem;
+}
+.footer-grid a:hover {
+  color: #fff;
+}
+
+.footer-grid input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 999px;
+  border: none;
+  margin-bottom: 10px;
+}
+.footer-grid button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 999px;
+  border: none;
+  background: #f59e0b;
+  font-weight: 700;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+.pro-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.footer-grid p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+.footer-grid button:hover {
+  filter: brightness(1.05);
+}
+.footer-grid a {
+  transition: color 0.2s ease;
+}
+.modal-header {
+  background: linear-gradient(180deg, #ffffff, #f9fafb);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.date-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+.date-pill {
+  padding: 12px 8px;
+  border-radius: 14px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1.25;
+}
+.date-pill span {
+  font-weight: 600;
+  font-size: 0.65rem;
+}
+
+.date-pill:hover {
+  background: #111827;
+  color: #fff;
+  border-color: #111827;
+}
+.modal-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s ease;
+}
+.modal-close:hover {
+  background: #dc2626;
+  transform: rotate(90deg) scale(1.1);
+}
+.modal-footer {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  padding: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+.modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+.modal-body::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 999px;
+}
+.modal-body::before {
+  content: "";
+  position: sticky;
+  top: 0;
+  height: 10px;
+  display: block;
+  background: linear-gradient(#fff, transparent);
+}
+.modal-body::after {
+  content: "";
+  position: sticky;
+  bottom: 0;
+  height: 10px;
+  display: block;
+  background: linear-gradient(transparent, #fff);
+}
+.date-pill.today {
+  background: linear-gradient(180deg, #f8fafc, #eef2f7);
+  color: #0f172a;
+  border-color: #94a3b8;
+  box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.08),
+    0 4px 12px rgba(15, 23, 42, 0.12);
+}
+.date-pill {
+  transition: background 0.1s ease, color 0.1s ease, transform 0.1s ease,
+    box-shadow 0.1s ease;
+}
+.date-pill:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
+@media (hover: hover) {
+  .date-pill.today:hover {
+    background: inherit;
+    color: inherit;
+    border-color: inherit;
+    transform: none;
+  }
+}
+
+.card {
+  position: relative;
+}
+.section-header {
+  grid-column: 1/-1;
+  padding: 10px 14px;
+  margin: 6px 0 2px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  background: linear-gradient(135deg, #fee2e2, #fecaca);
+  color: #991b1b;
+}
+
+.section-header.current {
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  color: #065f46;
+}
+.section-header {
+  animation: pulseOnce 0.8s ease;
+}
+
+@keyframes pulseOnce {
+  0% {
+    box-shadow: 0 0 0 rgba(220, 38, 38, 0);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(220, 38, 38, 0.15);
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+
+.skeleton {
+  height: 210px;
+  background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 37%, #e5e7eb 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.4s infinite;
+}
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+.search-hint {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #6b7280;
+  margin-top: 6px;
+}
+.card::after {
+  content: attr(data-info);
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.2s;
+font-weight: 700;
+  letter-spacing: 0.2px;
+
+}
+.card:hover::after {
+  opacity: 1;
+}
+
+
+.date-pill.today {
+  border: 2px solid #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+.grid {
+  transition: opacity 0.15s ease;
+}
+.modal-box {
+  overscroll-behavior: contain;
+}
+
+.modal-body {
+  scrollbar-width: thin;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  content-visibility: auto;
+}
+.advance-ribbon {
+  position: absolute;
+  top: 10px;
+  left: -6px;
+  padding: 6px 12px;
+  font-size: 0.5rem;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 0 999px 999px 0;
+  background: #111827;
+  z-index: 2;
+}
+
+@media (max-width: 400px) {
+  .advance-ribbon {
+    position: absolute;
+    top: 10px;
+    left: -6px;
+    padding: 6px 12px;
+    font-size: 0.42rem;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 0 999px 999px 0;
+    background: #111827;
+    z-index: 2;
+  }
+}
+.advance-ribbon.UPCOMING {
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+}
+
+.advance-ribbon.CURRENT {
+  background: linear-gradient(135deg, #059669, #047857);
+}
+.advance-ribbon.late {
+  background: linear-gradient(135deg, #0f766e, #064e3b);
+}
+.advance-ribbon.CURRENT.late {
+  background: linear-gradient(135deg, #0f766e, #064e3b);
+}
+@media (max-width: 600px) {
+  .track-btn {
+    font-size: 0.45rem;
+  }
+}
+@media (max-width: 600px) {
+.card-title {
+  font-size: 0.55rem;
+  font-weight: 700;
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 32px;
+}
+}
+		</style>
+	</head>
+
+	<body>
+		<!-- 🌟 Enhanced Navbar -->
+		<nav id="mainNavbar" class="navbar glassy">
+			<div class="nav-left"> <button id="menuBtn" class="menu-btn" aria-label="Menu"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <line x1="4" y1="6" x2="20" y2="6"></line>
+						<line x1="4" y1="12" x2="20" y2="12"></line>
+						<line x1="4" y1="18" x2="20" y2="18"></line> </svg> </button> <span class="brand-name" id="siteTitle">Loading...</span> </div>
+			<div class="nav-links" id="navLinks"></div>
+		</nav>
+		<div class="container">
+			<h1 id="film-title-heading" class="film-heading">BFILMY Live Box Office</h1>
+			<div class="controls"> <input id="search" placeholder="Search movie…"> <input type="date" id="globalDate"> <select id="trackingType"> <option>Live All India Box Office</option>
+					<option>Live All India Advance</option>
+					<option>Live District App Box Office</option>
+					<option>Live District App Advance</option>
+					<option>Live PIC Advance Sales</option> </select> <select id="languageFilter"> <option value="ALL">All Languages</option> </select> </div>
+			<div id="activeFilters" class="pill-group"></div>
+			<main class="grid" id="grid"></main>
+			<div style="text-align:center;margin:30px 0"> <button id="loadMoreBtn" style="
+      padding:12px 26px;
+      border-radius:999px;
+      border:none;
+      background:#111827;
+      color:#fff;
+      font-weight:700;
+      cursor:pointer;
+    "> Load Older Movies </button> </div>
+		</div> <!-- MODAL -->
+		<div id="modal">
+			<div class="modal-box">
+				<div class="modal-header">
+					<div>
+						<div class="modal-title" id="modalTitle"></div>
+						<div class="modal-meta" id="modalMeta"></div>
+					</div> <button class="modal-close" onclick="closeModal()">×</button> </div>
+				<div class="modal-body" id="modalBody"></div>
+			</div>
+		</div> <button id="scrollBtn">↑</button> <!-- TOP AD (NO CLS) -->
+		<div class="ad-slot"> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9348936590334154" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins> </div>
+		<script>
+			/* ================= URLS ================= */
+			const MOVIELIST_URL = "https://district24.pages.dev/movielist.json";
+			const DISTRICT_URL = "https://district24.pages.dev/districtmovies.json";
+			const FALLBACK_POSTER = "https://bfilmy.pages.dev/logo192.png";
+			
+			function isAdvanceMode() {
+			    const mode = document.getElementById("trackingType").value;
+			    return (
+			        mode === "Live All India Advance" ||
+			        mode === "Live District App Advance" ||
+			        mode === "Live PIC Advance Sales"
+			    );
+			}
+			
+			function getMovieDates(movie, forceAdvance = false) {
+			    const start = new Date(movie.dates[0]);
+			    const todayIST = new Date(getTodayIST());
+			
+			    let end = new Date(movie.dates[1]);
+			
+			    // 🚫 In Live Box Office → NEVER allow future dates
+			    if (!isAdvanceMode() && !forceAdvance) {
+			        end = todayIST < start ? new Date(start.getTime() - 86400000) : todayIST;
+			    }
+			
+			    const days = [];
+			    let dayCount = 1;
+			
+			    for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
+			        days.push({
+			            iso: d.toISOString().slice(0, 10),
+			            label: `Day ${dayCount++}`
+			        });
+			    }
+			
+			    return days.reverse();
+			}
+			
+			
+			/* ================= HELPERS ================= */
+			
+			function showSearchHint(text) {
+			    const controls = document.querySelector(".controls");
+			
+			    // remove old hint if exists
+			    const old = controls.querySelector(".search-hint");
+			    if (old) old.remove();
+			
+			    const hint = document.createElement("div");
+			    hint.className = "search-hint";
+			    hint.textContent = text;
+			    controls.appendChild(hint);
+			}
+			
+			function isSearching() {
+			    return document.getElementById("search").value.trim().length > 0;
+			}
+			
+			function showSkeletons(n = 12) {
+			    const grid = document.getElementById("grid");
+			    grid.innerHTML = "";
+			    for (let i = 0; i < n; i++) {
+			        const s = document.createElement("div");
+			        s.className = "card skeleton";
+			        grid.appendChild(s);
+			    }
+			}
+			
+			const norm = s =>
+			    (s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+			
+			function isDateValid(movie, selected) {
+			    return selected >= movie.dates[0] && selected <= movie.dates[1];
+			}
+			
+			function fuzzyMatch(a, b) {
+			    let mismatches = 0;
+			    const max = Math.max(a.length, b.length);
+			    for (let i = 0; i < max; i++) {
+			        if (a[i] !== b[i]) mismatches++;
+			        if (mismatches > 2) return false;
+			    }
+			    return true;
+			}
+			
+			function levenshtein(a, b) {
+			    const dp = Array.from({
+			        length: a.length + 1
+			    }, () => []);
+			    for (let i = 0; i <= a.length; i++) dp[i][0] = i;
+			    for (let j = 0; j <= b.length; j++) dp[0][j] = j;
+			
+			    for (let i = 1; i <= a.length; i++) {
+			        for (let j = 1; j <= b.length; j++) {
+			            dp[i][j] = Math.min(
+			                dp[i - 1][j] + 1,
+			                dp[i][j - 1] + 1,
+			                dp[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)
+			            );
+			        }
+			    }
+			    return dp[a.length][b.length];
+			}
+			
+			function getTodayIST() {
+			    const now = new Date();
+			    const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+			    const ist = new Date(utc + (5.5 * 3600000));
+			    return ist.toISOString().slice(0, 10);
+			}
+			
+			function addDays(iso, days) {
+			    const d = new Date(iso);
+			    d.setDate(d.getDate() + days);
+			    return d.toISOString().slice(0, 10);
+			}
+			
+			function updateFilterPills() {
+			    const box = document.getElementById("activeFilters");
+			    box.innerHTML = "";
+			    if (search.value) box.innerHTML += `<span class="pill">${search.value}</span>`;
+			    if (languageFilter.value !== "ALL")
+			        box.innerHTML += `<span class="pill">${languageFilter.value}</span>`;
+			}
+			
+			function clearFilters() {
+			    search.value = "";
+			    languageFilter.value = "ALL";
+			    resetAndRender();
+			}
+			
+			function jumpTo(section) {
+			    document.querySelector(section)?.scrollIntoView({
+			        behavior: "smooth"
+			    });
+			}
+			
+			function classifyMovies() {
+			    const todayIST = getTodayIST();
+			
+			    UPCOMING_MOVIES = [];
+			    CURRENT_MOVIES = [];
+			    OLDER_MOVIES = [];
+			
+			    MOVIES_LANG.forEach(m => {
+			        const start = m.dates[0];
+			        const end = m.dates[1];
+			
+			        if (isAdvanceMode()) {
+			            if (start > todayIST) {
+			                UPCOMING_MOVIES.push(m);
+			            } else if (end >= todayIST) {
+			                CURRENT_MOVIES.push(m);
+			            } else {
+			                OLDER_MOVIES.push(m);
+			            }
+			
+			
+			        } else {
+			            const todayIST = getTodayIST();
+			
+			            if (start > todayIST) {
+			                // ✅ UPCOMING also visible in Live Box Office
+			                UPCOMING_MOVIES.push(m);
+			            } else if (start <= todayIST && todayIST <= end) {
+			                CURRENT_MOVIES.push(m);
+			            } else {
+			                OLDER_MOVIES.push(m);
+			            }
+			        }
+			
+			    });
+			}
+			
+			/* ================= STATE ================= */
+			let DATA_READY = false;
+			let MOVIES = [];
+			let MOVIES_LANG = [];
+			let VISIBLE = 0;
+			const PAGE_SIZE = 24;
+			const POSTER_MAP = new Map();
+			const POSTER_CACHE = new Map();
+			const CITY_COUNT_MAP = new Map();
+			const MOVIE_LANG_MAP = new Map();
+			const KNOWN_LANGS = ["h298u32he"];
+			let SHOW_OLDER = false;
+			let CURRENT_MOVIES = [];
+			let OLDER_MOVIES = [];
+			let CURRENT_VISIBLE = 0;
+			let OLDER_VISIBLE = 0;
+			let MODE = "CURRENT"; // or "OLDER"
+			let LAST_RENDER_COUNT = 0;
+			let UPCOMING_MOVIES = [];
+			let UPCOMING_HEADER_SHOWN = false;
+			let CURRENT_HEADER_SHOWN = false;
+			let LAST_RENDERED_TOTAL = 0;
+			
+			
+			
+function buildTrackingURL(movie, language, selectedDate) {
+  const mode = document.getElementById("trackingType").value;
+  const todayIST = getTodayIST();
+
+  let base = "";
+
+  if (mode === "Live All India Box Office") {
+    base = "https://bfilmy.pages.dev/Live%20Boxoffice/track";
+    // 🚫 Box Office: never future
+    selectedDate = selectedDate > todayIST ? todayIST : selectedDate;
+
+  } else if (mode === "Live District App Box Office") {
+    base = "https://bfilmy.pages.dev/District%20Boxoffice/track";
+    selectedDate = selectedDate > todayIST ? todayIST : selectedDate;
+
+  } else if (mode === "Live All India Advance") {
+    base = "https://bfilmy.pages.dev/Daily%20Advance/track";
+    // ✅ DO NOT CLAMP — pill decides the date
+
+  } else if (mode === "Live District App Advance") {
+    base = "https://bfilmy.pages.dev/District%20Advance/track";
+
+  } else if (mode === "Live PIC Advance Sales") {
+    base = "https://bfilmy.pages.dev/PVR-INOX-CINEPOLIS/";
+  }
+
+  const params = new URLSearchParams({
+    movie,
+    language,
+    date: selectedDate
+  });
+
+  return `${base}?${params.toString()}`;
+}
+
+			
+			/* ================= INIT ================= */
+			const today = new Date().toISOString().slice(0, 10);
+			document.getElementById("globalDate").value = today;
+			
+			Promise.all([
+			    fetch(MOVIELIST_URL).then(r => r.json()),
+			    fetch(DISTRICT_URL).then(r => r.json())
+			]).then(([ml, dm]) => {
+			    const baseMovies = ml.movies || [];
+			    // Build movie → languages map
+			    (dm || []).forEach(d => {
+			        const key = norm(d.movie);
+			        if (!MOVIE_LANG_MAP.has(key)) {
+			            MOVIE_LANG_MAP.set(key, new Set());
+			        }
+			        MOVIE_LANG_MAP.get(key).add(d.language);
+			    });
+			    const langSelect = document.getElementById("languageFilter");
+			    Array.from(
+			        new Set([].concat(...Array.from(MOVIE_LANG_MAP.values()).map(s => [...s])))
+			    ).forEach(lang => {
+			        const opt = document.createElement("option");
+			        opt.value = lang;
+			        opt.textContent = lang;
+			        langSelect.appendChild(opt);
+			    });
+			    // Expand movies by language (from districtmovies.json)
+			    const seen = new Set();
+			
+			    baseMovies.forEach(m => {
+			        const key = norm(m.movie);
+			        const langs = MOVIE_LANG_MAP.get(key) || new Set([""]);
+			
+			        langs.forEach(lang => {
+			            const uniqKey = `${key}||${lang}`;
+			
+			            if (seen.has(uniqKey)) return;
+			            seen.add(uniqKey);
+			
+			            MOVIES_LANG.push({
+			                movie: m.movie,
+			                language: lang,
+			                dates: m.dates
+			            });
+			        });
+			    });
+			
+			
+			    // Build poster map
+			    (dm || []).forEach(d => {
+			        const key = norm(d.movie);
+			        if (!POSTER_MAP.has(key)) {
+			            POSTER_MAP.set(key, d.poster);
+			        }
+			    });
+			
+			
+			
+			    // Build cityCount map
+			    (dm || []).forEach(d => {
+			        const key = norm(d.movie);
+			        CITY_COUNT_MAP.set(key, d.cityCount || 0);
+			    });
+			
+			    // ✅ DEFAULT SORT: highest cityCount first
+			    // ✅ SORT movie-language cards correctly
+			    MOVIES_LANG.sort((a, b) => {
+			
+			        // 1️⃣ CityCount (movie-level, shared)
+			        const ca = CITY_COUNT_MAP.get(norm(a.movie)) || 0;
+			        const cb = CITY_COUNT_MAP.get(norm(b.movie)) || 0;
+			        if (cb !== ca) return cb - ca;
+			
+			        // 2️⃣ Release date (latest first)
+			        if (b.dates[0] !== a.dates[0]) {
+			            return b.dates[0].localeCompare(a.dates[0]);
+			        }
+			
+			        // 3️⃣ Stable language order (optional but clean)
+			        return a.language.localeCompare(b.language);
+			    });
+			
+			    const selectedDate = document.getElementById("globalDate").value;
+			
+			
+			    CURRENT_VISIBLE = 0;
+			    OLDER_VISIBLE = 0;
+			    MODE = "CURRENT";
+			
+			    VISIBLE = 0;
+			    classifyMovies();
+			    renderMore();
+			    injectSchema();
+			    DATA_READY = true; // ✅ ADD THIS
+			});
+			
+			function appendCard(m, tag = "") {
+			    const grid = document.getElementById("grid");
+			    const key = norm(m.movie);
+			    let poster = POSTER_CACHE.get(key);
+			
+			    if (!poster) {
+			        poster = POSTER_MAP.get(key) || FALLBACK_POSTER;
+			        POSTER_CACHE.set(key, poster);
+			    }
+			
+			    // 🎯 Decide ribbon class
+			    let ribbonClass = "";
+			
+			    if (tag) {
+			        if (
+			            tag.startsWith("Releasing") ||
+			            tag.startsWith("In")
+			        ) {
+			            ribbonClass = "UPCOMING";
+			        } else if (tag.startsWith("Day")) {
+			            const day = parseInt(tag.replace(/\D/g, ""), 10);
+			
+			            // Optional: late run styling
+			            ribbonClass = day >= 7 ? "late" : "CURRENT";
+			        } else {
+			            ribbonClass = "CURRENT";
+			        }
+			    }
+			
+			    const card = document.createElement("div");
+			    card.className = "card";
+			    card.innerHTML = `
+			      ${tag ? `
+			        <div class="advance-ribbon ${ribbonClass}">
+			          ${tag}
+			        </div>
+			      ` : ""}
+			      <img src="${poster}" loading="lazy">
+			      <div class="card-body">
+			        <div class="card-title">${m.movie} (${m.language})</div>
+			        <div class="track-btn">Track</div>
+			      </div>
+			    `;
+			
+			    card.onclick = () => openModal(m.movie, m.language);
+			    card.dataset.info =
+			        `${m.language} • ${tag || "Released"}`;
+			    grid.appendChild(card);
+			}
+			
+			
+			/* ================= RENDER ================= */
+			function renderMore() {
+			    let rendered = 0;
+			    const grid = document.getElementById("grid");
+			    const q = norm(document.getElementById("search").value);
+			    const langFilter = document.getElementById("languageFilter").value;
+			    const primaryList =
+			        interleaveLists(CURRENT_MOVIES, UPCOMING_MOVIES);
+			
+			
+			    const secondaryList = SHOW_OLDER ? OLDER_MOVIES : [];
+			
+			    while (rendered < PAGE_SIZE) {
+			
+			        let didRender = false;
+			
+			        /* ================= CURRENT / UPCOMING ================= */
+			        if (CURRENT_VISIBLE < primaryList.length) {
+			            const m = primaryList[CURRENT_VISIBLE];
+			            CURRENT_VISIBLE++;
+			
+			
+			            if (langFilter !== "ALL" && m.language !== langFilter) continue;
+			
+			            if (q && !norm(m.movie + " " + m.language).includes(q)) continue;
+			
+			            let tag = "";
+			            if (UPCOMING_MOVIES.includes(m)) {
+			                tag = getReleaseLabel(m.dates[0]);
+			            } else if (CURRENT_MOVIES.includes(m)) {
+			                tag = getCurrentDayLabel(m.dates[0]);
+			            }
+			
+			            appendCard(m, tag);
+			            rendered++;
+			            didRender = true;
+			        }
+			
+			        /* ================= OLDER (AFTER BUTTON) ================= */
+			        else if (SHOW_OLDER && OLDER_VISIBLE < secondaryList.length) {
+			            const m = secondaryList[OLDER_VISIBLE];
+			            OLDER_VISIBLE++;
+			
+			            if (langFilter !== "ALL" && m.language !== langFilter) continue;
+			            if (q && !norm(m.movie + " " + m.language).includes(q)) continue;
+			
+			            appendCard(m, ""); // ✅ NO TAG for older
+			            rendered++;
+			            didRender = true;
+			        }
+			
+			        if (!didRender) break;
+			    }
+			    LAST_RENDERED_TOTAL += rendered;
+			
+			}
+			
+			
+			/* ================= INFINITE SCROLL ================= */
+			
+			
+			/* ================= FILTER RESET ================= */
+			let searchTimer;
+			document.getElementById("search").oninput = () => {
+			    clearTimeout(searchTimer);
+			    searchTimer = setTimeout(() => {
+			        const q = norm(search.value);
+			        const langSelect = document.getElementById("languageFilter");
+			
+			        for (const l of KNOWN_LANGS) {
+			            if (q.includes(l)) {
+			                const proper = l.charAt(0).toUpperCase() + l.slice(1);
+			                if ([...langSelect.options].some(o => o.value === proper)) {
+			                    langSelect.value = proper;
+			                }
+			                break;
+			            }
+			        }
+			
+			        resetAndRender();
+			    }, 180);
+			};
+			
+			
+			document.getElementById("globalDate").onchange = () => {
+			    if (!isAdvanceMode()) resetAndRender();
+			};
+			
+			document.getElementById("trackingType").onchange = () => {
+			    resetAndRender();
+			
+			
+			};
+			
+			document.getElementById("languageFilter").onchange = resetAndRender;
+			
+			function getReleaseLabel(startDate) {
+			    const today = new Date(getTodayIST());
+			    const release = new Date(startDate);
+			
+			    const diffDays = Math.round(
+			        (release - today) / (1000 * 60 * 60 * 24)
+			    );
+			
+			    if (diffDays === 0) return "Releasing Today";
+			    if (diffDays === 1) return "Releasing Tomorrow";
+			    if (diffDays > 1) return `In ${diffDays} Days`;
+			
+			    return ""; // past or running
+			}
+			
+			function showEmptyState(message, suggestion) {
+			    const grid = document.getElementById("grid");
+			
+			    grid.innerHTML = `
+			    <div style="
+			      grid-column:1/-1;
+			      padding:28px 20px;
+			      border-radius:18px;
+			      background:#ffffff;
+			      box-shadow:0 10px 30px rgba(0,0,0,.08);
+			      text-align:center;
+			    ">
+			      <div style="font-size:1.2rem">😕</div>
+			      <div style="
+			        margin-top:8px;
+			        font-weight:800;
+			        font-size:.9rem;
+			      ">
+			        ${message}
+			      </div>
+			      <div style="
+			        margin-top:6px;
+			        font-size:.75rem;
+			        color:#6b7280;
+			      ">
+			        ${suggestion}
+			      </div>
+			    </div>
+			  `;
+			}
+			
+			/* ================= MODAL ================= */
+			function openModal(movieName, language) {
+			
+			    const movie = MOVIES_LANG.find(
+			        m => m.movie === movieName && m.language === language
+			    );
+			    if (!movie) return;
+			
+			    const todayIST = getTodayIST();
+			    const isUpcoming = movie.dates[0] > todayIST;
+			    const isBoxOffice = !isAdvanceMode();
+			
+			    // 🔁 UPCOMING movie clicked from Live Box Office
+			    const effectiveAdvance = isUpcoming && isBoxOffice;
+			
+			    // ✅ get dates (force advance if needed)
+			    const dates = getMovieDates(movie, effectiveAdvance);
+			
+			    document.getElementById("modalTitle").textContent = movie.movie;
+			    document.getElementById("modalMeta").textContent =
+			        `${dates.length} tracking days • ${
+			            effectiveAdvance
+			              ? "Advance Booking"
+			              : document.getElementById("trackingType").value
+			        }`;
+			
+			    document.getElementById("modalBody").innerHTML = `
+			      <div class="date-grid">
+			        ${dates.map(d=>`
+			          <div class="date-pill"
+			               data-date="${d.iso}"
+			               data-movie="${movie.movie}"
+			               data-lang="${language}">
+			            ${new Date(d.iso).toLocaleDateString("en-IN",{
+			              day:"2-digit",month:"short",year:"numeric"
+			            })}<br>
+			            <span style="opacity:.7">${d.label}</span>
+			          </div>
+			        `).join("")}
+			      </div>
+			    `;
+			
+			    // 🔗 Date pill click → correct URL
+			    document.querySelectorAll(".date-pill").forEach(pill => {
+			        pill.onclick = () => {
+			            const date = pill.dataset.date;
+			            const movieName = pill.dataset.movie;
+			            const lang = pill.dataset.lang;
+			
+			            let url;
+			            if (effectiveAdvance) {
+			                const original = trackingType.value;
+			                trackingType.value = "Live All India Advance";
+			                url = buildTrackingURL(movieName, lang, date);
+			                trackingType.value = original;
+			            } else {
+			                url = buildTrackingURL(movieName, lang, date);
+			            }
+			
+			            window.location.href = url;
+			        };
+			    });
+			
+			    // 🎯 Auto-focus today / last
+			    setTimeout(() => {
+			        const body = document.getElementById("modalBody");
+			        const todayISO = getTodayIST();
+			        const target =
+			            body.querySelector(`.date-pill[data-date="${todayISO}"]`) ||
+			            body.querySelector(".date-pill:last-child");
+			
+			        if (target) {
+			            target.classList.add("today");
+			            target.scrollIntoView({
+			                behavior: "smooth",
+			                block: "center"
+			            });
+			        }
+			    }, 40);
+			
+			    document.getElementById("modal").classList.add("show");
+			}
+			
+			function resetAndRender() {
+			    const grid = document.getElementById("grid");
+			    const searching = isSearching();
+			
+			    // ✅ Skeletons ONLY if data is NOT ready yet
+			    if (!DATA_READY) {
+			        showSkeletons();
+			    } else {
+			        grid.innerHTML = ""; // instant redraw
+			    }
+			
+			    CURRENT_VISIBLE = 0;
+			    OLDER_VISIBLE = 0;
+			    SHOW_OLDER = false;
+			    LAST_RENDERED_TOTAL = 0;
+			
+			    UPCOMING_HEADER_SHOWN = false;
+			    CURRENT_HEADER_SHOWN = false;
+			
+			    classifyMovies();
+			
+			    setTimeout(() => {
+			
+			        renderMore();
+			
+			        // Auto-fallback to OLDER (search scenario)
+			        if (LAST_RENDERED_TOTAL === 0 && OLDER_MOVIES.length) {
+			
+			            SHOW_OLDER = true;
+			
+			            CURRENT_VISIBLE = 0;
+			            OLDER_VISIBLE = 0;
+			            LAST_RENDERED_TOTAL = 0;
+			
+			            grid.innerHTML = "";
+			            UPCOMING_HEADER_SHOWN = false;
+			            CURRENT_HEADER_SHOWN = false;
+			
+			            document.getElementById("loadMoreBtn").style.display = "none";
+			
+			            if (searching) {
+			                showSearchHint("Showing results from older movies");
+			            }
+			
+			            renderMore();
+			        }
+			
+			        // Empty state
+			        if (LAST_RENDERED_TOTAL === 0) {
+			            showEmptyState(
+			                "No movies found",
+			                "Try removing filters or searching older movies"
+			            );
+			        }
+			
+			        // Clear hint when search is cleared
+			        if (!searching) {
+			            const hint = document.querySelector(".search-hint");
+			            if (hint) hint.remove();
+			        }
+			
+			        updateFilterPills();
+			
+			    }, DATA_READY ? 0 : 180);
+			}
+			
+			
+			
+			
+			function closeModal() {
+			    document.getElementById("modal").classList.remove("show");
+			}
+			
+			function getCurrentDayLabel(startDate) {
+			    const today = new Date(getTodayIST());
+			    const release = new Date(startDate);
+			
+			    const diffDays = Math.floor(
+			        (today - release) / (1000 * 60 * 60 * 24)
+			    ) + 1;
+			
+			    if (diffDays <= 0) return "";
+			    if (diffDays <= 7) return `Day ${diffDays}`;
+			    if (diffDays <= 14) return `Day ${diffDays}`;
+			    return `Day ${diffDays}+`;
+			}
+			
+			function interleaveLists(a, b) {
+			    const out = [];
+			    const max = Math.max(a.length, b.length);
+			
+			    for (let i = 0; i < max; i++) {
+			        if (i < a.length) out.push(a[i]); // current
+			        if (i < b.length) out.push(b[i]); // upcoming
+			    }
+			    return out;
+			}
+			
+			/* ================= SEO SCHEMA ================= */
+			function injectSchema() {
+			    const schema = {
+			        "@context": "https://schema.org",
+			        "@type": "ItemList",
+			        "itemListElement": MOVIES_LANG.slice(0, 50).map((m, i) => ({
+			            "@type": "Movie",
+			            "position": i + 1,
+			            "name": m.movie
+			        }))
+			
+			    };
+			    const s = document.createElement("script");
+			    s.type = "application/ld+json";
+			    s.textContent = JSON.stringify(schema);
+			    document.head.appendChild(s);
+			}
+			
+			
+			const scrollBtn = document.getElementById("scrollBtn");
+			
+			
+			scrollBtn.onclick = () => {
+			    window.scrollTo({
+			        top: 0,
+			        behavior: "smooth"
+			    });
+			};
+			
+			document.getElementById("loadMoreBtn").onclick = () => {
+			    SHOW_OLDER = true;
+			    renderMore();
+			    document.getElementById("loadMoreBtn").style.display = "none";
+			};
+			
+			window.addEventListener("scroll", () => {
+			    scrollBtn.style.display = window.scrollY > 400 ? "block" : "none";
+			
+			    if (document.getElementById("search").value.trim()) return;
+			
+			    if (
+			        window.innerHeight + window.scrollY >
+			        document.body.offsetHeight - 600
+			    ) {
+			        renderMore();
+			    }
+			});
+			
+			
+			document.addEventListener("keydown", e => {
+			    if (e.key === "Escape") closeModal();
+			});
+			
+			
+			/* ================= ADS ================= */
+			(window.adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		<footer class="pro-footer">
+			<div class="footer-grid">
+				<div>
+					<h3>BFilmy</h3>
+					<p>India’s most detailed live box office &amp; booking intelligence platform.</p>
+				</div>
+				<div>
+					<h4>Overseas Boxoffice</h4> <a href="/USA/">USA</a> <a href="/Canada/">Canada</a> <a href="/Nepal/Live%20Boxoffice">Nepal</a><a href="/Sri%20Lanka/Live%20Boxoffice">Sri Lanka<a href="https://bfilmy.pages.dev">Home</a></a> </div>
+				<div>
+					<h4>India Box Office</h4>  <a href="/Daily%20Advance/">Advance Booking</a> <a href="/Live%20Boxoffice/">Live Boxoffice</a> <a href="/Overseas">Overseas</a><a href="/PVR-INOX-CINEPOLIS/">PIC Advance Sales</a> <a href="/District%20Boxoffice/">District Boxoffice</a> </div>
+				<div>
+				    
+					<h4>Newsletter</h4> <input placeholder="Your email address"> <button>Subscribe</button> </div>
+			</div>
+			
+			<div style="margin-top:20px;display:flex;gap:14px"> <a href="https://x.com/BFilmyOfficiaI" aria-label="X">𝕏</a> <a href="#" aria-label="ContactUs">Contact Us</a> </div>
+			<div class="footer-bottom"> © 2025 BFilmy • All rights reserved </div>
+		</footer> <!-- Cloudflare Pages Analytics -->
+		<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;41fbe7480d854370a81d3e180dfb19be&quot;}"></script> <!-- Cloudflare Pages Analytics -->
+		<!-- Cloudflare Pages Analytics -->
+		<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;41fbe7480d854370a81d3e180dfb19be&quot;}"></script><!-- Cloudflare Pages Analytics -->
+	<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "41fbe7480d854370a81d3e180dfb19be"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>

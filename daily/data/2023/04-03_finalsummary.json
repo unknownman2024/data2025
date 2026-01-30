@@ -1,0 +1,779 @@
+{
+  "last_updated": "2023-04-03 23:59 IST",
+  "movies": {
+    "Bholaa [3D | Hindi]": {
+      "shows": 5171,
+      "gross": 26814661,
+      "sold": 126659,
+      "totalSeats": 1151445,
+      "occupancy": 11,
+      "details": [],
+      "Chain_details": []
+    },
+    "Dasara [2D | Telugu]": {
+      "shows": 2296,
+      "gross": 26218527,
+      "sold": 181236,
+      "totalSeats": 787983,
+      "occupancy": 23,
+      "details": [],
+      "Chain_details": []
+    },
+    "Bholaa [2D | Hindi]": {
+      "shows": 5061,
+      "gross": 15918360,
+      "sold": 98091,
+      "totalSeats": 1089900,
+      "occupancy": 9,
+      "details": [],
+      "Chain_details": []
+    },
+    "Viduthalai Part - 1 [2D | Tamil]": {
+      "shows": 1350,
+      "gross": 11856168,
+      "sold": 91391,
+      "totalSeats": 456955,
+      "occupancy": 20,
+      "details": [],
+      "Chain_details": []
+    },
+    "Pathu Thala [2D | Tamil]": {
+      "shows": 1256,
+      "gross": 7388614,
+      "sold": 61330,
+      "totalSeats": 438071,
+      "occupancy": 14,
+      "details": [],
+      "Chain_details": []
+    },
+    "John Wick: Chapter 4 [2D | English]": {
+      "shows": 1191,
+      "gross": 5114967,
+      "sold": 25747,
+      "totalSeats": 234064,
+      "occupancy": 11,
+      "details": [],
+      "Chain_details": []
+    },
+    "Dasara [2D | Hindi]": {
+      "shows": 2150,
+      "gross": 4697657,
+      "sold": 34587,
+      "totalSeats": 384300,
+      "occupancy": 9,
+      "details": [],
+      "Chain_details": []
+    },
+    "Tu Jhoothi Main Makkaar [2D | Hindi]": {
+      "shows": 1234,
+      "gross": 4262176,
+      "sold": 24160,
+      "totalSeats": 201333,
+      "occupancy": 12,
+      "details": [],
+      "Chain_details": []
+    },
+    "Das Ka Dhamki [2D | Telugu]": {
+      "shows": 486,
+      "gross": 3490616,
+      "sold": 33196,
+      "totalSeats": 174716,
+      "occupancy": 19,
+      "details": [],
+      "Chain_details": []
+    },
+    "Gurudev Hoysala [2D | Kannada]": {
+      "shows": 499,
+      "gross": 2795451,
+      "sold": 24125,
+      "totalSeats": 160833,
+      "occupancy": 15,
+      "details": [],
+      "Chain_details": []
+    },
+    "Mrs. Chatterjee Vs Norway [2D | Hindi]": {
+      "shows": 649,
+      "gross": 2662387,
+      "sold": 14911,
+      "totalSeats": 114700,
+      "occupancy": 13,
+      "details": [],
+      "Chain_details": []
+    },
+    "John Wick: Chapter 4 [2D | Hindi]": {
+      "shows": 527,
+      "gross": 1722983,
+      "sold": 11036,
+      "totalSeats": 100327,
+      "occupancy": 11,
+      "details": [],
+      "Chain_details": []
+    },
+    "Balagam [2D | Telugu]": {
+      "shows": 188,
+      "gross": 1359142,
+      "sold": 14052,
+      "totalSeats": 82659,
+      "occupancy": 17,
+      "details": [],
+      "Chain_details": []
+    },
+    "Rangamarthanda [2D | Telugu]": {
+      "shows": 186,
+      "gross": 1025513,
+      "sold": 10141,
+      "totalSeats": 59653,
+      "occupancy": 17,
+      "details": [],
+      "Chain_details": []
+    },
+    "Bholaa [3D 4DX | Hindi]": {
+      "shows": 61,
+      "gross": 805542,
+      "sold": 1959,
+      "totalSeats": 6122,
+      "occupancy": 32,
+      "details": [],
+      "Chain_details": []
+    },
+    "Dasara [2D | Tamil]": {
+      "shows": 207,
+      "gross": 707095,
+      "sold": 6390,
+      "totalSeats": 49154,
+      "occupancy": 13,
+      "details": [],
+      "Chain_details": []
+    },
+    "Bholaa [3D IMAX | Hindi]": {
+      "shows": 55,
+      "gross": 673078,
+      "sold": 1840,
+      "totalSeats": 15333,
+      "occupancy": 12,
+      "details": [],
+      "Chain_details": []
+    },
+    "Kallanum Bhagavathiyum [2D | Malayalam]": {
+      "shows": 255,
+      "gross": 550625,
+      "sold": 4155,
+      "totalSeats": 59357,
+      "occupancy": 7,
+      "details": [],
+      "Chain_details": []
+    },
+    "John Wick: Chapter 4 [IMAX 2D | English]": {
+      "shows": 26,
+      "gross": 481770,
+      "sold": 1516,
+      "totalSeats": 8422,
+      "occupancy": 18,
+      "details": [],
+      "Chain_details": []
+    },
+    "Parari [2D | Telugu]": {
+      "shows": 45,
+      "gross": 377186,
+      "sold": 4062,
+      "totalSeats": 19343,
+      "occupancy": 21,
+      "details": [],
+      "Chain_details": []
+    },
+    "Dasara [2D | Malayalam]": {
+      "shows": 199,
+      "gross": 367135,
+      "sold": 2581,
+      "totalSeats": 43017,
+      "occupancy": 6,
+      "details": [],
+      "Chain_details": []
+    },
+    "Orange [2D | Telugu]": {
+      "shows": 47,
+      "gross": 349665,
+      "sold": 3153,
+      "totalSeats": 17517,
+      "occupancy": 18,
+      "details": [],
+      "Chain_details": []
+    },
+    "Higuita [2D | Malayalam]": {
+      "shows": 180,
+      "gross": 332185,
+      "sold": 2319,
+      "totalSeats": 38650,
+      "occupancy": 6,
+      "details": [],
+      "Chain_details": []
+    },
+    "Nigah Marda Ayi Ve [2D | Punjabi]": {
+      "shows": 149,
+      "gross": 323060,
+      "sold": 1837,
+      "totalSeats": 22963,
+      "occupancy": 8,
+      "details": [],
+      "Chain_details": []
+    },
+    "Vellaripattanam [2D | Malayalam]": {
+      "shows": 71,
+      "gross": 284389,
+      "sold": 2028,
+      "totalSeats": 16900,
+      "occupancy": 12,
+      "details": [],
+      "Chain_details": []
+    },
+    "Veera Khadgam [2D | Telugu]": {
+      "shows": 36,
+      "gross": 277346,
+      "sold": 3772,
+      "totalSeats": 15088,
+      "occupancy": 25,
+      "details": [],
+      "Chain_details": []
+    },
+    "John Wick: Chapter 4 [4DX | English]": {
+      "shows": 38,
+      "gross": 258205,
+      "sold": 683,
+      "totalSeats": 3794,
+      "occupancy": 18,
+      "details": [],
+      "Chain_details": []
+    },
+    "Shazam! Fury Of The Gods [2D | English]": {
+      "shows": 73,
+      "gross": 253665,
+      "sold": 1161,
+      "totalSeats": 9675,
+      "occupancy": 12,
+      "details": [],
+      "Chain_details": []
+    },
+    "Romancham [2D | Malayalam]": {
+      "shows": 69,
+      "gross": 235211,
+      "sold": 1485,
+      "totalSeats": 14850,
+      "occupancy": 10,
+      "details": [],
+      "Chain_details": []
+    },
+    "Dahanam [2D | Telugu]": {
+      "shows": 29,
+      "gross": 218024,
+      "sold": 2236,
+      "totalSeats": 9722,
+      "occupancy": 23,
+      "details": [],
+      "Chain_details": []
+    },
+    "Kabzaa [2D | Kannada]": {
+      "shows": 74,
+      "gross": 201770,
+      "sold": 1790,
+      "totalSeats": 22375,
+      "occupancy": 8,
+      "details": [],
+      "Chain_details": []
+    },
+    "Kali Jotta [2D | Punjabi]": {
+      "shows": 69,
+      "gross": 186780,
+      "sold": 1191,
+      "totalSeats": 11910,
+      "occupancy": 10,
+      "details": [],
+      "Chain_details": []
+    },
+    "Dasara [2D | Kannada]": {
+      "shows": 49,
+      "gross": 184880,
+      "sold": 1743,
+      "totalSeats": 11620,
+      "occupancy": 15,
+      "details": [],
+      "Chain_details": []
+    },
+    "John Wick: Chapter 4 [2D | Telugu]": {
+      "shows": 37,
+      "gross": 177538,
+      "sold": 1356,
+      "totalSeats": 11300,
+      "occupancy": 12,
+      "details": [],
+      "Chain_details": []
+    },
+    "John Wick: Chapter 4 [2D | Tamil]": {
+      "shows": 48,
+      "gross": 173950,
+      "sold": 1404,
+      "totalSeats": 9360,
+      "occupancy": 15,
+      "details": [],
+      "Chain_details": []
+    },
+    "Sathyam Vedha Dharmam Chera [2D | Telugu]": {
+      "shows": 29,
+      "gross": 147502,
+      "sold": 1247,
+      "totalSeats": 7335,
+      "occupancy": 17,
+      "details": [],
+      "Chain_details": []
+    },
+    "Yaaran Diyan Poun Baaran [2D | Punjabi]": {
+      "shows": 133,
+      "gross": 146620,
+      "sold": 884,
+      "totalSeats": 17680,
+      "occupancy": 5,
+      "details": [],
+      "Chain_details": []
+    },
+    "Csi Sanatan [2D | Telugu]": {
+      "shows": 4,
+      "gross": 92840,
+      "sold": 844,
+      "totalSeats": 1111,
+      "occupancy": 76,
+      "details": [],
+      "Chain_details": []
+    },
+    "Jawanum Mullappoovum [2D | Malayalam]": {
+      "shows": 77,
+      "gross": 87224,
+      "sold": 660,
+      "totalSeats": 13200,
+      "occupancy": 5,
+      "details": [],
+      "Chain_details": []
+    },
+    "Everything Everywhere All At Once [2D | English]": {
+      "shows": 17,
+      "gross": 86074,
+      "sold": 207,
+      "totalSeats": 1294,
+      "occupancy": 16,
+      "details": [],
+      "Chain_details": []
+    },
+    "Laika [2D | Malayalam]": {
+      "shows": 27,
+      "gross": 85241,
+      "sold": 496,
+      "totalSeats": 4133,
+      "occupancy": 12,
+      "details": [],
+      "Chain_details": []
+    },
+    "Avatar 2 [3D | English]": {
+      "shows": 11,
+      "gross": 70888,
+      "sold": 245,
+      "totalSeats": 1361,
+      "occupancy": 18,
+      "details": [],
+      "Chain_details": []
+    },
+    "Sir [2D | Telugu]": {
+      "shows": 21,
+      "gross": 67980,
+      "sold": 774,
+      "totalSeats": 5954,
+      "occupancy": 13,
+      "details": [],
+      "Chain_details": []
+    },
+    "Veera Simha Reddy [2D | Telugu]": {
+      "shows": 4,
+      "gross": 62720,
+      "sold": 1166,
+      "totalSeats": 2200,
+      "occupancy": 53,
+      "details": [],
+      "Chain_details": []
+    },
+    "Andhrawala [2D | Telugu]": {
+      "shows": 5,
+      "gross": 53760,
+      "sold": 405,
+      "totalSeats": 2382,
+      "occupancy": 17,
+      "details": [],
+      "Chain_details": []
+    },
+    "Nava Pappa [2D | Gujarati]": {
+      "shows": 39,
+      "gross": 45430,
+      "sold": 335,
+      "totalSeats": 4786,
+      "occupancy": 7,
+      "details": [],
+      "Chain_details": []
+    },
+    "Ayothi [2D | Tamil]": {
+      "shows": 19,
+      "gross": 43465,
+      "sold": 904,
+      "totalSeats": 2659,
+      "occupancy": 34,
+      "details": [],
+      "Chain_details": []
+    },
+    "Pranaya Vilasam [2D | Malayalam]": {
+      "shows": 17,
+      "gross": 42250,
+      "sold": 215,
+      "totalSeats": 2688,
+      "occupancy": 8,
+      "details": [],
+      "Chain_details": []
+    },
+    "Raundal [2D | Marathi]": {
+      "shows": 14,
+      "gross": 39480,
+      "sold": 331,
+      "totalSeats": 2364,
+      "occupancy": 14,
+      "details": [],
+      "Chain_details": []
+    },
+    "Kabzaa [2D | Telugu]": {
+      "shows": 10,
+      "gross": 38410,
+      "sold": 391,
+      "totalSeats": 3008,
+      "occupancy": 13,
+      "details": [],
+      "Chain_details": []
+    },
+    "Waltair Veerayya [2D | Telugu]": {
+      "shows": 20,
+      "gross": 36040,
+      "sold": 378,
+      "totalSeats": 7560,
+      "occupancy": 5,
+      "details": [],
+      "Chain_details": []
+    },
+    "John Wick: Chapter 4 [4DX | Hindi]": {
+      "shows": 3,
+      "gross": 33890,
+      "sold": 104,
+      "totalSeats": 325,
+      "occupancy": 32,
+      "details": [],
+      "Chain_details": []
+    },
+    "Phulrani [2D | Marathi]": {
+      "shows": 7,
+      "gross": 33860,
+      "sold": 188,
+      "totalSeats": 1343,
+      "occupancy": 14,
+      "details": [],
+      "Chain_details": []
+    },
+    "Dada [2D | Tamil]": {
+      "shows": 6,
+      "gross": 28605,
+      "sold": 223,
+      "totalSeats": 858,
+      "occupancy": 26,
+      "details": [],
+      "Chain_details": []
+    },
+    "Hatyapuri [2D | Bengali]": {
+      "shows": 3,
+      "gross": 27540,
+      "sold": 420,
+      "totalSeats": 3231,
+      "occupancy": 13,
+      "details": [],
+      "Chain_details": []
+    },
+    "Projapati [2D | Bengali]": {
+      "shows": 14,
+      "gross": 26650,
+      "sold": 180,
+      "totalSeats": 2000,
+      "occupancy": 9,
+      "details": [],
+      "Chain_details": []
+    },
+    "Chal Man Jeetva Jaiye 2 [2D | Gujarati]": {
+      "shows": 13,
+      "gross": 24978,
+      "sold": 189,
+      "totalSeats": 1575,
+      "occupancy": 12,
+      "details": [],
+      "Chain_details": []
+    },
+    "Chasing [2D | Telugu]": {
+      "shows": 1,
+      "gross": 24420,
+      "sold": 182,
+      "totalSeats": 867,
+      "occupancy": 21,
+      "details": [],
+      "Chain_details": []
+    },
+    "Bheed [2D | Hindi]": {
+      "shows": 12,
+      "gross": 22940,
+      "sold": 112,
+      "totalSeats": 933,
+      "occupancy": 12,
+      "details": [],
+      "Chain_details": []
+    },
+    "Mitran Da Naa Chalda [2D | Punjabi]": {
+      "shows": 7,
+      "gross": 22570,
+      "sold": 104,
+      "totalSeats": 1300,
+      "occupancy": 8,
+      "details": [],
+      "Chain_details": []
+    },
+    "Shazam! Fury Of The Gods [2D | Hindi]": {
+      "shows": 11,
+      "gross": 21100,
+      "sold": 124,
+      "totalSeats": 1240,
+      "occupancy": 10,
+      "details": [],
+      "Chain_details": []
+    },
+    "Ant-Man And The Wasp: Quantumania [3D | English]": {
+      "shows": 3,
+      "gross": 14920,
+      "sold": 65,
+      "totalSeats": 295,
+      "occupancy": 22,
+      "details": [],
+      "Chain_details": []
+    },
+    "Pathaan [2D | Hindi]": {
+      "shows": 15,
+      "gross": 13952,
+      "sold": 86,
+      "totalSeats": 1075,
+      "occupancy": 8,
+      "details": [],
+      "Chain_details": []
+    },
+    "Shazam! Fury Of The Gods [2D | Tamil]": {
+      "shows": 2,
+      "gross": 13144,
+      "sold": 91,
+      "totalSeats": 414,
+      "occupancy": 22,
+      "details": [],
+      "Chain_details": []
+    },
+    "Avatar: The Way Of Water [3D | Tamil]": {
+      "shows": 2,
+      "gross": 12324,
+      "sold": 73,
+      "totalSeats": 243,
+      "occupancy": 30,
+      "details": [],
+      "Chain_details": []
+    },
+    "Phalana Abbayi Phalana Ammayi [2D | Telugu]": {
+      "shows": 3,
+      "gross": 10192,
+      "sold": 91,
+      "totalSeats": 433,
+      "occupancy": 21,
+      "details": [],
+      "Chain_details": []
+    },
+    "Kabzaa [2D | Hindi]": {
+      "shows": 14,
+      "gross": 8700,
+      "sold": 42,
+      "totalSeats": 1400,
+      "occupancy": 3,
+      "details": [],
+      "Chain_details": []
+    },
+    "Vash [2D | Gujarati]": {
+      "shows": 6,
+      "gross": 7994,
+      "sold": 56,
+      "totalSeats": 400,
+      "occupancy": 14,
+      "details": [],
+      "Chain_details": []
+    },
+    "Avatar: The Way Of Water [3D | Hindi]": {
+      "shows": 3,
+      "gross": 7990,
+      "sold": 41,
+      "totalSeats": 256,
+      "occupancy": 16,
+      "details": [],
+      "Chain_details": []
+    },
+    "What'S Love Got To Do With It? [2D | English]": {
+      "shows": 2,
+      "gross": 7960,
+      "sold": 14,
+      "totalSeats": 61,
+      "occupancy": 23,
+      "details": [],
+      "Chain_details": []
+    },
+    "Dr. Bezbaruah 2 [2D | Assamese]": {
+      "shows": 2,
+      "gross": 7710,
+      "sold": 41,
+      "totalSeats": 293,
+      "occupancy": 14,
+      "details": [],
+      "Chain_details": []
+    },
+    "Ved [2D | Marathi]": {
+      "shows": 3,
+      "gross": 7220,
+      "sold": 59,
+      "totalSeats": 590,
+      "occupancy": 10,
+      "details": [],
+      "Chain_details": []
+    },
+    "Kannai Nambaathe [2D | Tamil]": {
+      "shows": 2,
+      "gross": 6090,
+      "sold": 43,
+      "totalSeats": 331,
+      "occupancy": 13,
+      "details": [],
+      "Chain_details": []
+    },
+    "Dilwale Dulhania Le Jayenge [2D | Hindi]": {
+      "shows": 1,
+      "gross": 4440,
+      "sold": 120,
+      "totalSeats": 1091,
+      "occupancy": 11,
+      "details": [],
+      "Chain_details": []
+    },
+    "Thuramukham [2D | Malayalam]": {
+      "shows": 1,
+      "gross": 3600,
+      "sold": 15,
+      "totalSeats": 136,
+      "occupancy": 11,
+      "details": [],
+      "Chain_details": []
+    },
+    "Agilan [2D | Tamil]": {
+      "shows": 15,
+      "gross": 3208,
+      "sold": 1554,
+      "totalSeats": 4440,
+      "occupancy": 35,
+      "details": [],
+      "Chain_details": []
+    },
+    "Granny [2D | Malayalam]": {
+      "shows": 1,
+      "gross": 2730,
+      "sold": 21,
+      "totalSeats": 162,
+      "occupancy": 13,
+      "details": [],
+      "Chain_details": []
+    },
+    "Chaana [2D | Malayalam]": {
+      "shows": 1,
+      "gross": 2000,
+      "sold": 8,
+      "totalSeats": 160,
+      "occupancy": 5,
+      "details": [],
+      "Chain_details": []
+    },
+    "Zwigato [2D | Hindi]": {
+      "shows": 1,
+      "gross": 1980,
+      "sold": 9,
+      "totalSeats": 56,
+      "occupancy": 16,
+      "details": [],
+      "Chain_details": []
+    },
+    "Hondisi Bareyiri [2D | Kannada]": {
+      "shows": 1,
+      "gross": 1560,
+      "sold": 12,
+      "totalSeats": 92,
+      "occupancy": 13,
+      "details": [],
+      "Chain_details": []
+    },
+    "Ghore Pherar Gaan [2D | Bengali]": {
+      "shows": 7,
+      "gross": 1400,
+      "sold": 79,
+      "totalSeats": 2633,
+      "occupancy": 3,
+      "details": [],
+      "Chain_details": []
+    },
+    "Lyle, Lyle, Crocodile [2D | English]": {
+      "shows": 2,
+      "gross": 1260,
+      "sold": 7,
+      "totalSeats": 88,
+      "occupancy": 8,
+      "details": [],
+      "Chain_details": []
+    },
+    "Vaathi [2D | Tamil]": {
+      "shows": 1,
+      "gross": 1040,
+      "sold": 13,
+      "totalSeats": 100,
+      "occupancy": 13,
+      "details": [],
+      "Chain_details": []
+    },
+    "Puss In Boots: The Last Wish [3D | English]": {
+      "shows": 1,
+      "gross": 300,
+      "sold": 2,
+      "totalSeats": 50,
+      "occupancy": 4,
+      "details": [],
+      "Chain_details": []
+    },
+    "Jab We Met [2D | Hindi]": {
+      "shows": 1,
+      "gross": 224,
+      "sold": 2,
+      "totalSeats": 67,
+      "occupancy": 3,
+      "details": [],
+      "Chain_details": []
+    },
+    "Mayar Jonjal [2D | Bengali]": {
+      "shows": 5,
+      "gross": 30,
+      "sold": 1,
+      "totalSeats": 100,
+      "occupancy": 1,
+      "details": [],
+      "Chain_details": []
+    }
+  }
+}
